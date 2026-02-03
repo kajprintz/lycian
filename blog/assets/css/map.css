@@ -1,0 +1,17 @@
+#lycian-way-map {
+    height: 500px;
+    width: 100%;
+    border: 2px solid #2c3e50;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.marker-popup {
+    max-width: 300px;
+}
+
+@media (max-width: 768px) {
+    #lycian-way-map {
+        height: 300px;
+    }
+}
