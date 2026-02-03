@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lycian Way Hiking Blog</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+    <header>
+        <h1>Lycian Way Hiking Adventures</h1>
+        <nav>
+            <ul>
+                <li><a href="#map">Map</a></li>
+                <li><a href="#blog">Blog Posts</a></li>
+                <li><a href="#upload">Upload Content</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="map-section">
+            <h2>The Lycian Way Route</h2>
+            <div id="map"></div>
+        </section>
+
+        <section id="content-section">
+            <div id="content-display">
+                <p>Select a marker on the map to view content.</p>
+            </div>
+        </section>
+        
+        <section id="upload-section">
+            <h2>Share Your Experience</h2>
+            <form id="content-form">
+                <div class="form-group">
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" name="description" rows="4"></textarea>
+                </div>
+                
+                <div class="form-group">
+                    <label for="image">Image:</label>
+                    <input type="file" id="image" name="image" accept="image/*">
+                </div>
+                
+                <div class="form-group">
+                    <label for="lat">Latitude:</label>
+                    <input type="number" id="lat" name="lat" step="any" placeholder="Enter latitude" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="lng">Longitude:</label>
+                    <input type="number" id="lng" name="lng" step="any" placeholder="Enter longitude" required>
+                </div>
+                
+                <button type="submit">Add to Map</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Lycian Way Hiking Blog. All rights reserved.</p>
+    </footer>
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
